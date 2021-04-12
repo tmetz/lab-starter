@@ -1,6 +1,6 @@
-title: # a name for your Learning Lab course
-tagline: # a short description for your Learning Lab course, displayed on the course catalog
-description: # a longer description for your Learning Lab course, displayed on the course's landing page
+title: Using Actions to Deploy a GitHub Pages site with a custom Jekyll setup # a name for your Learning Lab course
+tagline: Use your own custom setup instead of the default GitHub Pages settings # a short description for your Learning Lab course, displayed on the course catalog
+description: This course will teach you how to build and deploy a Jekyll site to Pages using Actions.  You may be interested in doing this if you would like to use a different version of Jekyll, or unsupported plugins. # a longer description for your Learning Lab course, displayed on the course's landing page
 
 # Repository setup
 # The following section template information for the repository
@@ -23,37 +23,37 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-# Step 1: EDIT HERE - INTERNAL COMMENT DESCRIBING STEP 
+# Step 1: Push a Jekyll repository to GitHub
 - title: # the title of the step, shown to the learner in the course progress page
   description: # a description of the step, shown to the learner in the course progress page
   event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 2: EDIT HERE -INTERNAL COMMENT FOR STEP 2
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+# Step 2: Create workflow file
+# - title: Create a workflow file # the title of the step, shown to the learner in the course progress page
+#  description: Create a workflow file to run an Action every time the repository is pushed to # a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 3: EDIT HERE - INTERNAL COMMENT FOR STEP 3
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+# Step 3: Create Personal Access Token
+# - title: Create a Personal Access Token # the title of the step, shown to the learner in the course progress page
+#  description: Create a token to be used by your Action to push the built files to the gh-pages branch # a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 4: EDIT HERE - INTERNAL COMMENT FOR STEP 4
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+# Step 4: Set the GITHUB_TOKEN secret using your PAT
+# - title: # Set the GITHUB_TOKEN secret using your PAT the title of the step, shown to the learner in the course progress page
+#  description: Set the GITHUB_TOKEN secret to your newly created PAT so that your Actions have access to it # a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
-# Step 5: EDIT HERE - INTERNAL COMMENT FOR STEP 5
-# - title: # the title of the step, shown to the learner in the course progress page
-#  description: # a description of the step, shown to the learner in the course progress page
+# Step 5: Push a change to test
+# - title: Push a change to test # the title of the step, shown to the learner in the course progress page
+#  description: Trigger a build and deploy by pushing a change to your repository # a description of the step, shown to the learner in the course progress page
 #  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
