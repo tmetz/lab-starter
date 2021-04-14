@@ -7,8 +7,8 @@ description: This course will teach you how to build and deploy a Jekyll site to
 # This will be used when the repository is crated for each individual learner
 
 template:
-  name: # the name of the repository when it is created for the learner
-  repo: # the name of the template repository from which to clone for the learner
+  name:     # the name of the repository when it is created for the learner
+  repo:     # the name of the template repository from which to clone for the learner
 
 # `before` block
 # Actions to take place after the learner registers, but before they start interacting with their repo
